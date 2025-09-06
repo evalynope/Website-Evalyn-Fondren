@@ -43,12 +43,6 @@ body {
   font-weight: normal;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-}
-
 
 /* <--- Hero Section ---> */
 
@@ -230,43 +224,44 @@ footer {
 
 /* Responsiveness */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Small phones (portrait) */
-@media (max-width: 480px) {
-    .navbar ul {
-    flex-direction: row; /* stack vertically */
-    gap: 1rem;
-    background: #0D1B1E;
-    position: absolute;
-    top: 60px;  /* just under navbar */
-    right: 0;
-    width: 100%;
-    padding: 1rem 0;
-  }
+@media (max-width: 780px) {
 
-
-
-}
-
-/* Tablets & large phones */
-@media (max-width: 768px) {
-  .navbar ul {
-    display: flex;
-    flex-direction: row; /* stack vertically */
-    gap: 1rem;
-    background: #0D1B1E;
-    position: absolute;
-    top: 60px;  /* just under navbar */
-    right: 0;
-    width: 100%;
-    padding: 1rem 0;
-  }
-
- .hero-section .btn {
-  margin-top: 2rem;   /* pushes it down */
-  display: flex;
-}
   .navbar {
-    justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: #0D1B1E;
+  z-index: 1000; /* stay above everything */
+}
+
+body {
+  padding-top: 70px; /* equal to navbar height */
+}
+
+ .hero-section .btn  {
+    margin: 2rem auto 0 auto;  /* center horizontally */
+    display: block;
   }
 
   .hero-section h1 {
@@ -285,38 +280,41 @@ footer {
     text-align: center;
   }
 
-.hero-img {
-position: static;
-width: 200px;
-display: block;
-}
+  .hero-img {
+  position: static;
+  display: block;
+  margin: 2rem auto; /* centers horizontally */
+  width: 200px; /* small enough for phone */
+  }
 
 section {
-padding: 3rem 1rem;
+padding: 1rem 1rem;
 text-align: center;
 }
 
 section h2 {
  font-size: 2.5rem;
-
 }
 
 #about {
-  padding: 1rem 7rem;
-  text-align: center;
-  font-size: 1.8rem;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  line-height: 1.4;
 }
 
 .project-card {
+  max-width: 90%;
   margin: 1rem auto;
 }
 
-@media (max-width: 768px) {
-  .project-card {
-    max-width: 90%;
-    margin: 1rem auto;
-  }
+#contact {
+  margin-bottom: 4rem; /* extra space before footer */
 }
+
+footer {
+  padding: 3rem 1rem; /* more padding */
+}
+
 
 
 }
