@@ -229,100 +229,15 @@ footer {
   margin-top: 2rem;
 }
 
-/* Responsive */
-
-/*Tablet*/
-
-@media(max-width: 600px) {
-  .navbar ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
 
 
-@media(max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-graphic img {
-    margin-top: 2rem;
-  }
-}
-
-@media(max-width: 768px) {
-  .card-1,
-  .card-2,
-  .card-3 {
-    margin-left: auto;   /* centers them */
-    margin-right: auto;
-  }
-}
 
 
-@media(max-width: 480px) {
-  .hero-section h1 {
-    font-size: 3rem;
-    padding: 0; /* remove big padding */
-    text-align: center;
-  }
-
-  .hero-section h4 {
-    font-size: 2rem;
-    padding: 0;
-    text-align: center;
-  }
-
-  .hero-section h5 {
-    font-size: 1.5rem;
-    padding: 0;
-    text-align: center;
-  }
-
-  .hero-section .btn {
-    margin: 1rem auto; /* center button */
-    display: block;
-  }
-
-  .hero-img {
-    position: static; /* stop absolute positioning */
-    width: 200px;     /* shrink image */
-    margin: 2rem auto;
-  }
-}
 
 
-/* Tablet breakpoint */
-@media(max-width: 768px) {
-  .card-1,
-  .card-2,
-  .card-3 {
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .hero-graphic img {
-    margin-top: 2rem;
-  }
-}
 
-/* Phone breakpoint */
-@media(max-width: 480px) {
-  .hero-section h1 { font-size: 3rem; padding: 0; text-align: center; }
-  .hero-section h4 { font-size: 2rem; padding: 0; text-align: center; }
-  .hero-section h5 { font-size: 1.5rem; padding: 0; text-align: center; }
-  .hero-section .btn { margin: 1rem auto; display: block; }
-  .hero-img { position: static; width: 200px; margin: 2rem auto; }
 
-  .navbar ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
+
+
