@@ -261,11 +261,13 @@ footer {
     padding: 1rem 0;
   }
 
+ .hero-section .btn {
+  margin-top: 2rem;   /* pushes it down */
+  display: flex;
+}
   .navbar {
     justify-content: space-between;
   }
-
-  
 
   .hero-section h1 {
     font-size: 4rem;
@@ -283,12 +285,39 @@ footer {
     text-align: center;
   }
 
-    .hero-img {
-    position: static;
-    width: 200px;
-    margin: 2rem auto;
-    display: block;
+.hero-img {
+position: static;
+width: 200px;
+display: block;
+}
+
+section {
+padding: 3rem 1rem;
+text-align: center;
+}
+
+section h2 {
+ font-size: 2.5rem;
+
+}
+
+#about {
+  padding: 1rem 7rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.project-card {
+  margin: 1rem auto;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 90%;
+    margin: 1rem auto;
   }
+}
+
 
 }
 
