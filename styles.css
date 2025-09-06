@@ -64,7 +64,6 @@ body {
   font-family: "Geneva", sans-serif;
   font-size: 8rem;
   color:#86361D;
-  /*color:#F2CEE6; */
   padding: 0rem 6rem;
   text-align: left;
  }
@@ -251,7 +250,8 @@ footer {
 /* Tablets & large phones */
 @media (max-width: 768px) {
   .navbar ul {
-    flex-direction: column; /* stack vertically */
+    display: flex;
+    flex-direction: row; /* stack vertically */
     gap: 1rem;
     background: #0D1B1E;
     position: absolute;
@@ -263,6 +263,31 @@ footer {
 
   .navbar {
     justify-content: space-between;
+  }
+
+  
+
+  .hero-section h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 0rem 2rem;
+  }
+
+  .hero-section h4 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-section h5 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+    .hero-img {
+    position: static;
+    width: 200px;
+    margin: 2rem auto;
+    display: block;
   }
 
 }
