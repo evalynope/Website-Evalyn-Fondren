@@ -231,7 +231,47 @@ footer {
 
 /* Responsiveness */
 
-/* @media */
+/* Small phones (portrait) */
+@media (max-width: 480px) {
+    .navbar ul {
+    flex-direction: row; /* stack vertically */
+    gap: 1rem;
+    background: #0D1B1E;
+    position: absolute;
+    top: 60px;  /* just under navbar */
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+
+
+}
+
+/* Tablets & large phones */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column; /* stack vertically */
+    gap: 1rem;
+    background: #0D1B1E;
+    position: absolute;
+    top: 60px;  /* just under navbar */
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+}
+
+/* Small laptops */
+@media (max-width: 1024px) {
+
+}
+
 
 
 
