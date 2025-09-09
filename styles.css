@@ -85,9 +85,9 @@ body {
   font-weight: normal;
  }
 
- .hero-section .btn {
-  margin-top: 1rem;   /* pushes it down */
-  margin-left: 35rem;  /* nudges it to the right */
+ .hero-btn {
+  display: block;
+  margin: 1rem auto 0 auto;
 }
 
 .btn {
@@ -203,7 +203,8 @@ section h2 {
 #contact {
   font-size: 1rem;
   font-weight: bold;
-  color:#C3DBC5
+  color:#C3DBC5;
+  margin-bottom: 6rem;
 }
 
 #contact a {
@@ -315,7 +316,8 @@ section h2 {
 }
 
 #contact {
-  margin-bottom: 4rem; /* extra space before footer */
+  margin-top: 1rem;
+   /* extra space before footer */
 }
 
 footer {
