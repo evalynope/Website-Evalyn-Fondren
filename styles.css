@@ -11,6 +11,7 @@ body {
   line-height: 1.3;
   color: #C3DBC5;
   background: #0D1B1E; /* rich black */
+  padding: 20px;
 }
 
 
@@ -243,16 +244,18 @@ footer {
 /* Small phones (portrait) */
 @media (max-width: 780px) {
  
-  .navbar ul {              /* hidden by default */
-  flex-direction: row;      /* stacked */
-  background: #0D1B1E;         /* match nav background */
+  .navbar ul {            
+  flex-direction: row;      
+  background: #0D1B1E;        
   width: 100%;                 
   text-align: center;
   padding: 0;
+  gap: 3rem;
+  flex-wrap: nowrap;
   justify-content: center;
   }
 
-.navbar {
+/*.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -265,6 +268,11 @@ footer {
   font-size: 0.8rem;
   background: #0D1B1E;
   z-index: 1000; 
+} */
+
+navbar a {
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
  
 body {
@@ -280,7 +288,7 @@ body {
 .hero-section h1 {
   font-size: 4rem;
   text-align: center;
-  padding: 0rem 2rem;
+  padding: 0rem 0rem;
 }
 
 .hero-section h4 {
@@ -307,7 +315,7 @@ text-align: center;
 
 section h2 {
  font-size: 2.5rem;
- padding: 1rem 1rem;
+ padding: 4rem 1rem;
 }
 
 #about {
