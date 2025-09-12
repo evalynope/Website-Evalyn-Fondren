@@ -122,6 +122,7 @@ body {
   top: 3rem;  
   width: 300px;
   border-radius: 25px;
+  text-align: center
 }
 
 /* Sections */
@@ -275,27 +276,33 @@ footer {
   white-space: nowrap;
 }
  
-body {
+/*body {
   padding-top: 60px;
+} */
+
+body {
+  padding-top: 60px; 
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .hero-section .btn  {
-  margin: 2rem auto 0 auto;  /* center horizontally */
+  margin: 2rem auto 0 auto;  
   display: block;
 }
 
 hero section {
   max-width: 90%;
-  margin: 0 auto;       /* center */
-  text-align: center;   /* center all text */
+  margin: 0 auto;       
+  text-align: center;   
   padding: 0 1rem;
 }
 
 .hero-section h1 {
-  text-align: center;  /* center text */
-  padding: 0 1rem;     /* reduce padding for small screens */
+  text-align: center;  
+  padding: 0 1rem;     
   margin: 0 auto;
-  font-size: 4rem;      /* optional, ensures block element is centered */
+  font-size: 4rem;      
 }
 
 .hero-section h4 {
@@ -314,6 +321,7 @@ display: block;
 margin: 2rem auto; 
 width: 200px;
 border-radius: 25px; 
+max-width: 90%
 }
 
 section {
