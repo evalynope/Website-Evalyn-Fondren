@@ -242,32 +242,33 @@ footer {
 
 /* Small phones (portrait) */
 @media (max-width: 780px) {
+ 
+  .navbar ul {              /* hidden by default */
+  flex-direction: row;      /* stacked */
+  background: #0D1B1E;         /* match nav background */
+  width: 100%;                 
+  text-align: center;
+  padding: 0;
+  justify-content: center;
+  }
 
-  .navbar {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0.1rem;
+  font-size: 0.6rem;
   background: #0D1B1E;
-  z-index: 1000; /* stay above everything */
-  font-size: 0.9rem;
-  padding: 10px; 
+  z-index: 1000; 
 }
-
-.navbar ul {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  gap: 1rem;
-}
-
+ 
 body {
-  padding-top: 150px; /* equal to navbar height */
+  padding-top: 60px; 
 }
 
 .hero-section .btn  {
