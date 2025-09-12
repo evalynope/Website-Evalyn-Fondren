@@ -312,7 +312,8 @@ hero section {
 position: static;
 display: block;
 margin: 2rem auto; 
-width: 200px; 
+width: 200px;
+border-radius: 25px; 
 }
 
 section {
@@ -345,7 +346,7 @@ section h2 {
 }
 
 #contact {
-  margin-top: 1rem;
+  margin-top: 3rem;
    /* extra space before footer */
 }
 
