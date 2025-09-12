@@ -250,12 +250,12 @@ footer {
   width: 100%;                 
   text-align: center;
   padding: 0;
-  gap: 3rem;
+  gap: 2rem;
   flex-wrap: nowrap;
   justify-content: center;
   }
 
-/*.navbar {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -264,20 +264,19 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.1rem;
+  gap: 2rem;
   font-size: 0.8rem;
   background: #0D1B1E;
   z-index: 1000; 
-} */
+} 
 
-navbar a {
+.navbar a {
   font-size: 0.9rem;
   white-space: nowrap;
 }
  
 body {
   padding-top: 60px;
-  padding: 100px; 
 }
 
 .hero-section .btn  {
@@ -285,10 +284,18 @@ body {
   display: block;
 }
 
+hero section {
+  max-width: 90%;
+  margin: 0 auto;       /* center */
+  text-align: center;   /* center all text */
+  padding: 0 1rem;
+}
+
 .hero-section h1 {
-  font-size: 4rem;
-  text-align: center;
-  padding: 0rem 0rem;
+  text-align: center;  /* center text */
+  padding: 0 1rem;     /* reduce padding for small screens */
+  margin: 0 auto;
+  font-size: 4rem;      /* optional, ensures block element is centered */
 }
 
 .hero-section h4 {
@@ -304,25 +311,27 @@ body {
 .hero-img {
 position: static;
 display: block;
-margin: 2rem auto; /* centers horizontally */
-width: 200px; /* small enough for phone */
+margin: 2rem auto; 
+width: 200px; 
 }
 
 section {
-padding: 1rem 1rem;
+padding: 1rem 4rem;
 text-align: center;
 }
 
 section h2 {
  font-size: 2.5rem;
- padding: 4rem 1rem;
+ padding: 2rem 1rem;
 }
+
 
 #about {
   font-size: 1rem;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem; 
   line-height: 1.4;
 }
+
 
 #skills .skills-grid {
   grid-template-columns: 1fr; /* single column */
@@ -345,8 +354,16 @@ footer {
 }
 
 
-
 }
+
+
+
+
+
+
+
+
+
 
 /* Small laptops */
 @media (max-width: 1024px) {
