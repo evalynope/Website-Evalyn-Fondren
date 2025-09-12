@@ -302,7 +302,13 @@ hero section {
   text-align: center;  
   padding: 0 1rem;     
   margin: 0 auto;
-  font-size: 4rem;      
+  font-size: 4rem;
+  font-weight: normal      
+}
+
+.hero text {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .hero-section h4 {
