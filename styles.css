@@ -258,6 +258,12 @@ footer {
   padding: 0px; 
 }
 
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
 body {
   padding-top: 70px; /* equal to navbar height */
 }
