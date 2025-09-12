@@ -255,7 +255,7 @@ footer {
   background: #0D1B1E;
   z-index: 1000; /* stay above everything */
   font-size: 0.9rem;
-  padding: 0px; 
+  padding: 10px; 
 }
 
 .navbar ul {
@@ -267,7 +267,7 @@ footer {
 }
 
 body {
-  padding-top: 70px; /* equal to navbar height */
+  padding-top: 150px; /* equal to navbar height */
 }
 
 .hero-section .btn  {
