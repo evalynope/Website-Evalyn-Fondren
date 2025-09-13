@@ -396,54 +396,80 @@ footer {
 
 /*  screens bigger than MacBook Air */
 @media (min-width: 1440px) {
-  body {
-    font-size: 2rem;      
-    line-height: 1.6;
-  }
 
-  .hero-section {
-    max-width: 1200px;      /* prevent hero text from stretching too wide */
-    margin: 0 auto;         /* center it */
-    text-align: center;     /* optional: center text  */
-  }
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
 
-  .hero-section h1 {
-    font-size: 14rem;       /* scale up name */
-  }
+.hero {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem; */
+}
 
-  .hero-section h4 {}
-    font-size: 5rem;
-  }
+.hero-section {
+  flex: 1 1 50%;
+}
 
-  .hero-section h5 {
-    font-size: 4rem;
-  }
+/* .hero-btn {
+  margin-top: 2rem;
+} */
 
-  .hero-img {
-    width: 500px;           /* bigger image */
-    right: 15rem;           /* nudge it over for balance */
-  }
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
 
-  .navbar {
-    max-width: 1400px;      /* keeps nav from stretching edge-to-edge */
-    margin: 0 auto;
-    gap: 3rem;              
-  }
 
-  section {
-    padding: 8rem 2rem;    
-  }
+.card-1,
+.card-2,
+.card-3 {
+  margin-right: 1 !important; /* override your existing styles */
+}
 
-  #about {
-    font-size: 2rem;     
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+section h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
 
-  .project-card {
-    max-width: 800px;      
+#about p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns:repeat(2, minmax(300px, 1fr));
+  gap: 3rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 900px) {
+  .project-list {
+    grid-template-columns: 1fr;
   }
 }
+
+}
+
+
 
 
 
