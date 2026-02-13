@@ -157,12 +157,11 @@ section h2 {
   width: 90%;
   margin: 5rem auto 2rem auto;
   margin-top: 1rem;
-  /* justify-content: center;  */
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 #skills .skill-item {
-  flex: 0 0 30%;   /* don’t grow too big, allow shrinking, base 150px */
+  /* flex: 0 0 30%;    */
   display: flex;
   margin-top: 4rem;
   flex-direction: column;  /* icon above text */
@@ -253,21 +252,6 @@ footer {
   background: #fff;
   margin-top: 2rem;
 }
-
-/* Responsiveness */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -374,12 +358,6 @@ section h2 {
 }
 
 
-/* #skills .skills-grid {
-  grid-template-columns: 1fr; 
-  gap: 1rem;                  
-  justify-items: center;      
-} */
-
 .project-card {
   max-width: 90%;
   margin: 1rem auto;
@@ -387,11 +365,22 @@ section h2 {
 
 #contact {
   margin-top: 3rem;
-   /* extra space before footer */
+   
 }
 
 footer {
-  padding: 3rem 1rem; /* more padding */
+  padding: 3rem 1rem; 
+}
+
+#skills .skills-grid {
+  flex-direction: column;   /* stack vertically */
+  align-items: center;      /* center items horizontally */
+}
+
+#skills .skill-item {
+  flex: 0 0 100%;           /* full width */
+  max-width: 300px;         /* optional: prevents it from being too wide */
+  margin-top: 2rem;
 }
 
 
